@@ -1,16 +1,21 @@
 {
     "name": "makerlog-menubar",
-    "version": "1.0.7",
+    "version": "1.1.9",
     "description": "A menubar app for Makerlog",
     "author": {
         "name": "Ethan",
         "email": "me@ethan.link"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Booligoosh/makerlog-menubar.git"
+    },
     "dependencies": {
         "dotenv": "^7.0.0",
         "electron-json-storage": "^4.1.6",
+        "electron-updater": "^4.0.14",
         "rws": "0.0.1",
-        "yarn": "^1.15.2"
+        "yarn": "^1.17.3"
     },
     "devDependencies": {
         "electron": "^3.1.8",
@@ -30,7 +35,8 @@
             "category": "public.app-category.productivity",
             "target": [
                 "dmg",
-                "tar.gz"
+                "tar.gz",
+                "zip"
             ],
             "darkModeSupport": true,
             "icon": "Icon.icns"
@@ -52,5 +58,5 @@
             "icon": "Icon.png",
             "category": "Office"
         }
-    }
+    } 
 }
